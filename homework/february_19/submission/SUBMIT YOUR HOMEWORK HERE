@@ -1,1 +1,48 @@
+// See https://aka.ms/new-console-template for more information
 
+// See https://aka.ms/new-console-template for more information
+
+
+string userA, userB;
+double a;
+double b;
+
+Console.WriteLine("What would you like 'a' to be?");
+userA = Console.ReadLine();
+Console.WriteLine("What would you like 'b' to be?");
+userB = Console.ReadLine();
+a = double.Parse(userA);
+b = double.Parse(userB);
+Console.WriteLine("What math do you need to do? options: addition, subtraction, multiplication, or division. Please enter an option.");
+string operation = Console.ReadLine();
+if (operation == "addition")
+{ 
+    double result = a + b;
+    Console.WriteLine(result);
+}
+else if (operation == "multiplication")
+{
+    double result = a * b;
+    Console.WriteLine(result);
+}
+else if (operation == "subtraction")
+{  
+    double result = a - b;
+    Console.WriteLine(result);
+}
+else if (operation == "division") 
+{
+    double result = a / b;
+    Console.WriteLine(result);
+}
+
+Console.WriteLine("Would you like to do any other operations? Please enter 'yes' or 'no'.");
+var answer = Console.ReadLine();
+if (answer == "yes") 
+{
+    Console.WriteLine("Then try using an actual calculator instead of some college kid's program");
+}
+if (answer == "no") 
+{
+    Console.WriteLine("great, have a nice day!");
+}
